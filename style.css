@@ -503,12 +503,8 @@ a:hover .tooltip,
     color: var(--main-color);
 }
 
-.portfolio-item:hover .service-icon .icon a {
+.portfolio-item:hover .service-icon a {
     background: var(--main-color);
-}
-
-.portfolio-item .service-icon a i {
-    transform: rotate(-135deg);
 }
 
 .portfolio-item .service-icon a i {
