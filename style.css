@@ -151,7 +151,20 @@ a:hover .tooltip,
 
 .section.contact {
     visibility: hidden;
+    transition-delay: .5s;
 } 
+
+.section.contact.active {
+    visibility: visible;
+} 
+
+.section.contact.action-contact {
+    transition-delay: 1.5s;
+}
+
+.section.contact.action-contact.active {
+    transition-delay: 0ms  ;
+}
 
 .home,
 .about {
@@ -571,7 +584,7 @@ a:hover .tooltip,
 }
 
 .contact-form .field-box textarea {
-    height: 20rem;
+    height: 12rem;
     resize: none;
 }
 
@@ -581,4 +594,83 @@ a:hover .tooltip,
 
 .contact-form .contact-btn .btn {
     cursor: pointer;
+}
+
+/* breakpoints*/
+
+@media  screen and (max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+    
+}
+
+@media  screen and (max-width:992px) {
+    .section{
+        padding: 0 4%;
+    }
+
+    .resume,
+    .portfolio {
+        padding-top: 1.5rem;
+        padding-bottom: 27rem;
+    }
+
+    .contact {
+        padding-top: 1.5rem;
+        padding-bottom: 18rem;
+    }
+    
+}
+
+@media  screen and (max-width:762px) {
+    html {
+        font-size: 50%;
+    }
+
+    .nav {
+        bottom: 0;
+    }
+
+    .home,
+    .about {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+        padding-bottom: 6rem;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .img-box {
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .resume,
+    .portfolio {
+        padding-bottom: 25rem;
+    }
+
+    .contact {
+        padding-bottom: 16rem;
+    }
+}
+
+@media  screen and (max-width:600px) {
+    .resume,
+    .portfolio {
+        padding-top: 1rem;
+        padding-bottom: 22rem;
+    }
+
+    .tab-box {
+        margin-top: 0;
+    }
+    
+    .contact {
+        padding-top: 1rem;
+    }
 }
