@@ -58,3 +58,8 @@ portfolioLists.forEach((list, idx) => {
 
 }); 
 });
+
+// visiblite du section de contact (cube reloading animation) 
+setTimeout(() => {
+    sections[4].classList.remove('active');
+}, 1500);
